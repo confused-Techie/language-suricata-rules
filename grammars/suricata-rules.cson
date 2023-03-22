@@ -1,0 +1,58 @@
+name: "Suricata Rules",
+scopeName: "source.suricataRules"
+type: "tree-sitter",
+parser: "tree-sitter-suricata-rules"
+
+fileTypes: [
+  "rules"
+]
+
+comments:
+  start: '#'
+
+folds: [
+  {
+    type: 'options'
+  }
+]
+
+scopes:
+  'source_file': 'source.suricataRules'
+  'comment': 'comment'
+
+  'constant': 'support.constant'
+  'digit': 'constant.numeric'
+  'decimal': 'constant.numeric'
+  'hexidecimal': 'constant.numeric'
+  'hexstring': 'constant.numeric'
+  'octal': 'constant.numeric'
+  'value > other': 'constant.other'
+  'digit > operator': 'punctuation.operator.other'
+  'digit > unit': 'support.constant'
+  'digit > min_max': 'punctuation.operator.other'
+
+  'negation': 'keyword.control'
+  'value > colon': 'keyword.other.separator'
+  'semicolon': 'punctuation.separator.definition'
+  'comma': 'punctuation.separator.list.comma'
+  'bitwise_and': 'keyword.operator'
+  'bitwise_or': 'keyword.operator'
+  'math_operator': 'keyword.operator'
+
+  'string': 'quoted.double'
+  'text': 'string.unquoted'
+
+  'action': 'entity.keyword.control'
+
+  'header': 'meta.header'
+  'header > protocol': 'entity.name.function'
+  'header > ipv4': 'constant.numeric'
+  'header > ipv6': 'constant.numeric'
+  'header > variable': 'variable.parameter'
+  'header > port': 'constant.numeric'
+  'header > direction': 'keyword.operator'
+
+  'options': 'meta.options'
+  'options > keyword': 'support.function'
+  'options > separator': 'keyword.operator'
+  'options > value': 'meta.value'
