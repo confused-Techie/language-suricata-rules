@@ -10,6 +10,6 @@
   "author": "confused-Techie",
   "license": "MIT",
   "dependencies": {
-    "tree-sitter-suricata-rules": "^1.0.0"
+    "tree-sitter-suricata-rules": "^1.0.1"
   }
 }
