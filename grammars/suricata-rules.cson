@@ -20,7 +20,7 @@ scopes:
   'source_file': 'source.suricataRules'
   'comment': 'comment'
 
-  'constant': 'support.constant'
+  'constant': 'variable.constant'
   'digit': 'constant.numeric'
   'decimal': 'constant.numeric'
   'hexidecimal': 'constant.numeric'
