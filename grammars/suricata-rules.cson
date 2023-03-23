@@ -39,7 +39,7 @@ scopes:
   'bitwise_or': 'keyword.operator'
   'math_operator': 'keyword.operator'
 
-  'string': 'quoted.double'
+  'string': 'string.quoted.double'
   'text': 'string.unquoted'
 
   'action': 'entity.keyword.control'
